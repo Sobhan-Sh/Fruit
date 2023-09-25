@@ -1,0 +1,144 @@
+/*!
+Author       : Bestwebcreator.
+Template Name: Organiq - Organic Food HTML Template
+Version      : 1.0
+*/
+
+a:hover,
+.header_list > li .dropdown-item:hover, 
+.custome_dropdown .ddChild li:hover, 
+.contact_detail > li a:hover,
+.navbar .navbar-nav > li > a.active,
+.navbar .navbar-nav > li:hover > a,
+.navbar .navbar-nav .dropdown-menu li a.active, .navbar .navbar-nav .dropdown-menu li a:hover, .navbar .navbar-nav .dropdown-menu > ul > li:hover > a, .navbar .navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a,
+.dark_skin .navbar .navbar-nav .dropdown-menu li a.active, .dark_skin .navbar .navbar-nav .dropdown-menu li a:hover, .dark_skin .navbar .navbar-nav .dropdown-menu > ul > li:hover > a, .dark_skin .navbar .navbar-nav .dropdown-menu > ul > .mega-menu-col ul > li:hover > a,
+.cart_total .cart_amount,
+.banner_text a,
+.nav-tabs .nav-link:hover, 
+.nav-tabs .nav-link.active, 
+.nav-tabs .nav-link.active:hover,
+.price,.blog_meta li a:hover,
+.testi_user span, .author_intro span,
+.contact_info li span,
+.footer_link li a:hover, 
+.widget_links li a:hover, 
+.contact_info li a:hover,
+.icon_box_style2 .box_icon i,
+.sub_heading,
+.footer_dark .widget_links li a:hover, 
+.footer_dark .footer_link li a:hover, 
+.footer_dark .post_content h6 a:hover, 
+.footer_dark .contact_info a:hover,
+.ripple,.team_title span,
+.widget_categories a:hover,
+.login_footer a:hover,
+.link_container a,
+.list_style_2 li::before {
+	color: #07d765;
+}
+
+.btn-white,
+.btn-outline-default,
+.text_default {
+	color: #07d765 !important;
+}
+
+.line-scale .line,
+.cart_count,
+.btn-default,
+.navbar-toggler,
+.btn-outline-default:hover,
+.icon_box_style1 .box_icon,
+.pr_action_btn li a,
+.mfp-wrap button.mfp-close,
+.quantity .minus:hover, 
+.quantity .plus:hover,
+.border_social .social_icons li a:hover, 
+.border_social.social_icons li a:hover,
+.cart_btn .add_wishlist:hover,
+.owl-theme .owl-nav [class*="owl-"],
+.blog_date,.scrollup:hover,
+.icon_box_style3 .box_icon,
+.testimonial_style2 .owl-item.center .testimonial_box,
+.list_style_1 li::before,
+.shorting_icon.active,
+.filter_price .ui-slider .ui-slider-range,
+.filter_price .ui-slider .ui-slider-handle,
+.tags a:hover,
+.page-item.active .page-link, .page-item .page-link:hover,
+.custome-radio input[type="radio"] + .form-check-label::after,
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span,
+.post_navigation a:hover,
+.pr_categories a,
+.grid_filter li a.current,
+.pricing_ribbon,
+.progress_content .progress-bar,
+.contact_info.contact_info_style2 li span {
+	background-color: #07d765;
+}
+
+.bg_default {
+    background-color: #07d765 !important;
+}
+
+.btn-default,
+.btn-default.btn-borderd::before,
+.btn-outline-default,
+.icon_box_style1 .box_icon::before, 
+.icon_box_style3 .box_icon::before,
+.icon_box_style1:hover,
+.border_social .social_icons li a:hover,
+.border_social.social_icons li a:hover,
+.cart_btn .add_wishlist:hover,
+.testimonial_style1 .testimonial_img::before,
+.product_gallery_item a.active,
+.testimonial_style2 .owl-item.center .testimonial_box,
+.page-item.active .page-link, .page-item .page-link:hover,
+.tab-style1 .nav-tabs .nav-link.active, .tab-style1 .nav-tabs .nav-link.active:hover,
+.custome-radio input[type="radio"]:checked + .form-check-label::before,
+.owl-theme .owl-dots .owl-dot span,
+.contact_info.contact_info_style2 li span::after {
+	border-color: #07d765;
+}
+
+.blog_date.style2::before {
+	border-color: #07d765 transparent transparent transparent;
+}
+
+.btn-default:hover, .btn-default.focus, .btn-default:focus,
+.owl-theme .owl-nav [class*="owl-"]:hover {
+	background-color: #00a735;
+}
+
+.btn-default:hover, .btn-default.focus, .btn-default:focus,
+.btn-default.btn-borderd:hover::before {
+	border-color: #00a735;
+}
+
+.overlay_bg_default_90:before {
+	background-color: rgba(7, 215, 101, 0.90);
+}
+.overlay_bg_default_80:before {
+	background-color: rgba(7, 215, 101, 0.80);
+}
+.overlay_bg_default_70:before {
+	background-color: rgba(7, 215, 101, 0.70);
+}
+.overlay_bg_default_60:before {
+	background-color: rgba(7, 215, 101, 0.60);
+}
+.overlay_bg_default_50:before {
+	background-color: rgba(7, 215, 101, 0.50);
+}
+.overlay_bg_default_40:before {
+	background-color: rgba(7, 215, 101, 0.40);
+}
+.overlay_bg_default_30:before {
+	background-color: rgba(7, 215, 101, 0.30);
+}
+.overlay_bg_default_20:before {
+	background-color: rgba(7, 215, 101, 0.20);
+}
+.overlay_bg_default_10:before {
+	background-color: rgba(7, 215, 101, 0.10);
+}
