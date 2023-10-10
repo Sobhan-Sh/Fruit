@@ -40,59 +40,6 @@
     <meta http-equiv="imagetoolbar" content="no">
     <link rel="stylesheet" type="text/css" href="assets/css/_nil.css">
 
-    <style id="mttstyle">
-        #mttContainer {
-            left: 0 !important;
-            top: 0 !important;
-            width: 1000px !important;
-            margin-left: -500px !important;
-            height: 10px !important;
-            margin-top: -5px !important;
-            position: fixed !important;
-            z-index: 100000200 !important;
-            background: none !important;
-            pointer-events: none !important;
-            display: inline-block !important;
-        }
-
-        .bootstrapiso .tooltip {
-            width: auto !important;
-            height: auto !important;
-            background: none !important;
-            border: none !important;
-            border-radius: 0px !important;
-            visibility: visible !important;
-            pointer-events: none !important;
-        }
-
-        .bootstrapiso .tooltip-inner {
-            font-size: 14px !important;
-            max-width: 200px !important;
-            text-align: center !important;
-            backdrop-filter: blur(2px) !important;
-            background-color: #000000b8 !important;
-            color: #ffffffff !important;
-            pointer-events: auto;
-        }
-
-        .bootstrapiso .arrow::before {
-            border-top-color: #000000b8 !important;
-        }
-
-        .bootstrapiso .arrow::after {
-            display: none !important;
-        }
-
-        .ocr_text_div {
-            position: absolute;
-            opacity: 0.7;
-            font-size: calc(100% + 1cqw);
-            overflow: hidden;
-            border: 2px solid CornflowerBlue;
-            color: transparent !important;
-            background: none !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -114,7 +61,7 @@
         <!-- menu -->
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li>
                             <a class="nav-link active" href="#"> نام شرکت و توضیحات </a>
@@ -187,17 +134,36 @@
     <!--! end image banner header -->
     <!--* start Search -->
     <section class="pb-5 pt-0 bg_gray">
-        <form action="#" method="get">
-            <section class=" container mx-auto row mx-0 px-2 py-1 align-items-center justify-content-center">
-                <section class="col-10 d-flex flex-column flex-md-row justify-content-center py-0 pl-0">
-                    <input type="text" placeholder="جستجو" class="form-control mt-1 my-md-0">
+        <div class="container">
+            <form action="#" method="get">
+                <section class="mx-auto row mx-0 px-2 py-1 align-items-center justify-content-center">
+                    <section class="col-10 d-flex flex-column flex-md-row justify-content-center py-0 pl-0">
+                        <input type="text" placeholder="جستجو" class="form-control mt-1 my-md-0">
+                    </section>
+                    <button type="submit"
+                        class="btn btn-primary col-10 mt-2 mt-md-0 col-md-2 h-100 btn-sm">جستجو</button>
                 </section>
-                <button type="submit" class="btn btn-primary col-10 mt-2 mt-md-0 col-md-2 h-100 btn-sm">جستجو</button>
-            </section>
-        </form>
+            </form>
+            <div class="sliderCategoryProduct owl-carousel mt-3 owl-theme py-3 ps-2 owl-loaded owl-drag">
+                <div class="item py-3">
+                    <a href="#">خشکبار</a>
+                </div>
+                <div class="item py-3">
+                    <a href="#">تره بار</a>
+                </div>
+                <div class="item py-3">
+                    <a href="#">میوه مجلسی</a>
+                </div>
+                <div class="item py-3">
+                    <a href="#">میوه های خانگی</a>
+                </div>
+                <div class="item py-3">
+                    <a href="#">کافه</a>
+                </div>
+            </div>
+        </div>
     </section>
     <!--* end Search -->
-
     <!--* start slider Competitive Advantage -->
     <section class="container">
         <div class="sliderCompetitiveAdvantage owl-carousel owl-theme">
@@ -248,9 +214,9 @@
 
             </div>
         </div>
-        <div class="sliderDiscount owl-carousel owl-theme py-3">
+        <div class="sliderDiscount container-fluid owl-carousel owl-theme py-3">
             <div class="item">
-                <div class="product">
+                <div class="product mb-2">
                     <span class="pr_flash bg_red">ناموجود</span>
                     <div class="product_img">
                         <a href="#"><img src="assets/images/product_img2.jpg" alt="product_img2"></a>
@@ -266,7 +232,7 @@
                         </div>
                     </div>
                     <div class="product_info">
-                        <h6><a href="#">انگورهای تازه آلی</a></h6>
+                        <h6><a href="#">انگورهای تازه عالی</a></h6>
                         <div class="rating">
                             <div class="product_rate" style="width:80%"></div>
                         </div>
@@ -275,7 +241,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product">
+                <div class="product mb-2">
                     <span class="pr_flash bg_green">-80%</span>
                     <div class="product_img">
                         <a href="#"><img src="assets/images/product_img4.jpg" alt="product_img2"></a>
@@ -291,7 +257,7 @@
                         </div>
                     </div>
                     <div class="product_info">
-                        <h6><a href="#">انگورهای تازه آلی</a></h6>
+                        <h6><a href="#">انگورهای تازه عالی</a></h6>
                         <div class="rating">
                             <div class="product_rate" style="width:80%"></div>
                         </div>
@@ -300,7 +266,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product">
+                <div class="product mb-2">
                     <span class="pr_flash bg_red">ناموجود</span>
                     <div class="product_img">
                         <a href="#"><img src="assets/images/product_img1.jpg" alt="product_img2"></a>
@@ -316,7 +282,7 @@
                         </div>
                     </div>
                     <div class="product_info">
-                        <h6><a href="#">انگورهای تازه آلی</a></h6>
+                        <h6><a href="#">انگورهای تازه عالی</a></h6>
                         <div class="rating">
                             <div class="product_rate" style="width:80%"></div>
                         </div>
@@ -325,7 +291,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product">
+                <div class="product mb-2">
                     <span class="pr_flash bg_orange">-10٪</span>
                     <div class="product_img">
                         <a href="#"><img src="assets/images/product_img6.jpg" alt="product_img2"></a>
@@ -341,7 +307,7 @@
                         </div>
                     </div>
                     <div class="product_info">
-                        <h6><a href="#">انگورهای تازه آلی</a></h6>
+                        <h6><a href="#">انگورهای تازه عالی</a></h6>
                         <div class="rating">
                             <div class="product_rate" style="width:80%"></div>
                         </div>
@@ -350,7 +316,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="product">
+                <div class="product mb-2">
                     <div class="product_img">
                         <a href="#"><img src="assets/images/product_img5.jpg" alt="product_img2"></a>
                         <div class="product_action_box">
@@ -365,7 +331,7 @@
                         </div>
                     </div>
                     <div class="product_info">
-                        <h6><a href="#">انگورهای تازه آلی</a></h6>
+                        <h6><a href="#">انگورهای تازه عالی</a></h6>
                         <div class="rating">
                             <div class="product_rate" style="width:80%"></div>
                         </div>
@@ -378,8 +344,8 @@
     <!--* end slider -->
 
     <!--? slider ? -->
-    <section class="bg_gray">
-        <div id="carouselBanner" class="carousel slide pointer-event" data-ride="carousel">
+    <section class="bg_gray pt-md-5">
+        <div id="carouselBanner" class="carousel container slide pointer-event" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselBanner" data-slide-to="0" class=""></li>
                 <li data-target="#carouselBanner" data-slide-to="1" class=""></li>
@@ -468,11 +434,11 @@
                             </li>
                         </ul>
                         <div class="small_divider clearfix"></div>
-                        <div class="tab-content">
+                        <div class="tab-content pb-5 pb-md-2">
                             <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab1">
-                                <div class="row animation" data-animation="fadeInUp" data-animation-delay="0.05s"
-                                    style="animation-delay: 0.05s; opacity: 0;">
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <div class="row justify-content-center animation" data-animation="fadeInUp"
+                                    data-animation-delay="0.05s" style="animation-delay: 0.05s; opacity: 0;">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <span class="pr_flash bg_green">فروش</span>
                                             <div class="product_img">
@@ -499,7 +465,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <span class="pr_flash bg_orange">-10٪</span>
                                             <div class="product_img">
@@ -518,7 +484,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">انگورهای تازه آلی</a></h6>
+                                                <h6><a href="#">انگورهای تازه عالی</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -526,7 +492,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <div class="product_img">
                                                 <a href="#"><img src="assets/images/product_img3.jpg"
@@ -552,7 +518,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <span class="pr_flash bg_green">فروش</span>
                                             <div class="product_img">
@@ -579,7 +545,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <div class="product_img">
                                                 <a href="#"><img src="assets/images/product_img5.jpg"
@@ -605,7 +571,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <div class="product_img">
                                                 <a href="#"><img src="assets/images/product_img6.jpg"
@@ -631,7 +597,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <span class="pr_flash bg_red">داغ</span>
                                             <div class="product_img">
@@ -650,7 +616,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">گوجه فرنگی آلی تازه</a></h6>
+                                                <h6><a href="#">گوجه فرنگی عالی تازه</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -658,7 +624,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                                    <div class="col-xl-3 col-lg-4 col-sm-6 col-10">
                                         <div class="product">
                                             <span class="pr_flash bg_orange">-25٪</span>
                                             <div class="product_img">
@@ -709,7 +675,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">انگورهای تازه آلی</a></h6>
+                                                <h6><a href="#">انگورهای تازه عالی</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -814,7 +780,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">گوجه فرنگی آلی تازه</a></h6>
+                                                <h6><a href="#">گوجه فرنگی عالی تازه</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -900,7 +866,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">انگورهای تازه آلی</a></h6>
+                                                <h6><a href="#">انگورهای تازه عالی</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -980,7 +946,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">گوجه فرنگی آلی تازه</a></h6>
+                                                <h6><a href="#">گوجه فرنگی عالی تازه</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -1118,7 +1084,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">گوجه فرنگی آلی تازه</a></h6>
+                                                <h6><a href="#">گوجه فرنگی عالی تازه</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -1177,7 +1143,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">گوجه فرنگی آلی تازه</a></h6>
+                                                <h6><a href="#">گوجه فرنگی عالی تازه</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -1257,7 +1223,7 @@
                                                 </div>
                                             </div>
                                             <div class="product_info">
-                                                <h6><a href="#">انگورهای تازه آلی</a></h6>
+                                                <h6><a href="#">انگورهای تازه عالی</a></h6>
                                                 <div class="rating">
                                                     <div class="product_rate" style="width:80%"></div>
                                                 </div>
@@ -1430,1096 +1396,6 @@
         </div>
     </section>
     <!-- START SECTION PRODUCT -->
-    <!-- START SECTION BANNER -->
-    <!-- <section class="banner_slider p-0">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade pointer-event" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item bg_light_green background_bg"
-                    data-img-src="assets/images/slide_bg_pattern.png"
-                    style="background-image: url(&quot;assets/images/slide_bg_pattern.png&quot;); background-position: center center; background-size: cover;">
-                    <div class="banner_slide_content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-8 offset-xl-1 col-lg-9 offset-lg-1">
-                                    <div class="banner_content banner_content_pad animation animated fadeIn"
-                                        data-animation="fadeIn" data-animation-delay="0.4s"
-                                        data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 10}"
-                                        style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                                        <h2 class="animation animated fadeInDown" data-animation="fadeInDown"
-                                            data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">میوه
-                                            های ارگانیک</h2>
-                                        <p class="animation animated fadeInUp" data-animation="fadeInUp"
-                                            data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            لازم است</p>
-                                        <a class="btn btn-default btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.7s"
-                                            style="animation-delay: 0.7s; opacity: 1;">ادامه مطلب</a>
-                                        <a class="btn btn-white btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.8s"
-                                            style="animation-delay: 0.8s; opacity: 1;">تماس با ما</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner_shape">
-                        <div class="shape1">
-                            <div class="animation animated rollIn" data-animation="rollIn" data-animation-delay="0.5s"
-                                style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: -30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape1.png" alt="شکل 1"
-                                    style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape2">
-                            <div class="animation animated bounceInDown" data-animation="bounceInDown"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape2.png" alt="شکل2"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape3">
-                            <div class="animation animated bounceInRight" data-animation="bounceInRight"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape3.png" alt="شکل 3"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item bg_light_yellow active">
-                    <div class="banner_slide_content">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-10">
-                                    <div class="banner_content border_shape text-center animation animated zoomIn"
-                                        data-animation="zoomIn" data-animation-delay="0.4s"
-                                        data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 10}"
-                                        style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                                        <h2 class="animation animated fadeInDown" data-animation="fadeInDown"
-                                            data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                            میوه های 100% ارگانیک</h2>
-                                        <p class="animation animated fadeInUp" data-animation="fadeInUp"
-                                            data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            لازم استt<br>
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
-                                        <a class="btn btn-default btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.7s"
-                                            style="animation-delay: 0.7s; opacity: 1;">ادامه مطلب</a>
-                                        <a class="btn btn-white btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.8s"
-                                            style="animation-delay: 0.8s; opacity: 1;">تماس با ما</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner_shape">
-                        <div class="shape4">
-                            <div class="animation animated fadeInLeftBig" data-animation="fadeInLeftBig"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: -30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape4.png" alt="شکل 4"
-                                    style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape5">
-                            <div class="animation animated slideInDown" data-animation="slideInDown"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape5.png" alt="شکل 5"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape6">
-                            <div class="animation animated bounceInDown" data-animation="bounceInDown"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape6.png" alt="شکل 6"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape7">
-                            <div class="animation animated fadeInRightBig" data-animation="fadeInRightBig"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape7.png" alt="شکل 7"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape8">
-                            <div class="animation animated slideInUp" data-animation="slideInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape8.png" alt="شکل 8"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape9">
-                            <div class="animation animated bounceInUp" data-animation="bounceInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape9.png" alt="شکل 9"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape10">
-                            <div class="animation animated bounceInUp" data-animation="bounceInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape10.png" alt="شکل 10"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape11">
-                            <div class="animation animated bounceInUp" data-animation="bounceInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape11.png" alt="شکل 11"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item bg_light_blue">
-                    <div class="banner_slide_content">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xl-8 offset-xl-1 col-lg-9 offset-lg-1 col-md-10">
-                                    <div class="banner_content banner_content_pad animation animated fadeIn"
-                                        data-animation="fadeIn" data-animation-delay="0.4s"
-                                        data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 10}"
-                                        style="transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.01px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                                        <h2 class="animation font_style1 animated fadeInDown"
-                                            data-animation="fadeInDown" data-animation-delay="0.5s"
-                                            style="animation-delay: 0.5s; opacity: 1;">میوه های ارگانیک</h2>
-                                        <p class="animation animated fadeInUp" data-animation="fadeInUp"
-                                            data-animation-delay="0.6s" style="animation-delay: 0.6s; opacity: 1;">
-                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                            طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
-                                            لازم است<br class="d-none d-lg-block"> لورم ایپسوم متن ساختگی با تولید سادگی
-                                            نامفهوم</p>
-                                        <a class="btn btn-default btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.7s"
-                                            style="animation-delay: 0.7s; opacity: 1;">ادامه مطلب</a>
-                                        <a class="btn btn-white btn-radius btn-borderd animation animated fadeInUp"
-                                            href="#" data-animation="fadeInUp" data-animation-delay="0.8s"
-                                            style="animation-delay: 0.8s; opacity: 1;">تماس با ما</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="banner_shape">
-                        <div class="shape12">
-                            <div class="animation animated slideInDown" data-animation="slideInDown"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: -30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape12.png" alt="شکل 12"
-                                    style="transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape13">
-                            <div class="animation animated slideInDown" data-animation="slideInDown"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape13.png" alt="شکل 13"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape14">
-                            <div class="animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.5s"
-                                style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape14.png" alt="شکل 14"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape15">
-                            <div class="animation animated bounceInUp" data-animation="bounceInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape15.png" alt="شکل 15"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape16">
-                            <div class="animation animated zoomInUp" data-animation="zoomInUp"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape16.png" alt="شکل 16"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                        <div class="shape17">
-                            <div class="animation animated slideInLeft" data-animation="slideInLeft"
-                                data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                                <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}"
-                                    src="assets/images/shape17.png" alt="شکل 17"
-                                    style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev"><i
-                    class="ion-chevron-right"></i></a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next"><i
-                    class="ion-chevron-left"></i></a>
-        </div>
-    </section> -->
-    <!-- END SECTION BANNER -->
-
-    <!-- START SECTION BANNER BOX -->
-    <!-- <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 animation animated bounceInUp" data-animation="bounceInUp"
-                    data-animation-delay="0.2s" style="animation-delay: 0.2s; opacity: 1;">
-                    <div class="banner_box box_shadow4 radius_all_10">
-                        <div class="banner_text">
-                            <h3>نام محصول</h3>
-                            <p>لورم ایپسوم متن ساختگی</p>
-                            <em><a href="#"><u>خریدکن</u></a></em>
-                        </div>
-                        <div class="banner_img">
-                            <img src="assets/images/banner_img1.png" alt="banner_img1">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 animation animated bounceInUp" data-animation="bounceInUp"
-                    data-animation-delay="0.3s" style="animation-delay: 0.3s; opacity: 1;">
-                    <div class="banner_box box_shadow4 radius_all_10">
-                        <div class="banner_text">
-                            <h3>نام محصول</h3>
-                            <p>لورم ایپسوم متن ساختگی</p>
-                            <em><a href="#"><u>خریدکن</u></a></em>
-                        </div>
-                        <div class="banner_img">
-                            <img src="assets/images/banner_img2.png" alt="banner_img2">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 animation animated bounceInUp" data-animation="bounceInUp"
-                    data-animation-delay="0.4s" style="animation-delay: 0.4s; opacity: 1;">
-                    <div class="banner_box box_shadow4 radius_all_10">
-                        <div class="banner_text">
-                            <h3>نام محصول</h3>
-                            <p>لورم ایپسوم متن ساختگی</p>
-                            <em><a href="#"><u>خریدکن</u></a></em>
-                        </div>
-                        <div class="banner_img">
-                            <img src="assets/images/banner_img3.png" alt="banner_img3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION BANNER BOX -->
-
-    <!-- START SECTION WHY CHOOSE US -->
-    <!-- <section class="bg_gray">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-md-6 col-sm-8 text-center">
-                    <div class="heading_s1 text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
-                        <h2>
-                            پیشنهاد ویژه
-                        </h2>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 1;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/shape4.png" style="width: auto; height: 70px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 1;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/shape35.png" style="width: auto; height: 50px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 order-lg-last">
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 1;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/shape24.png" style="width: auto; height: 60px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 1;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/shape15.png" style="width: auto; height: 70px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="why_choose_img bounceimg">
-                        <img src="assets/images/why_choose_img.png" alt="icon design">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wave_shape"><img src="assets/images/wave_shape.png" alt="موج_شکل"></div>
-        <div class="overlap_shape">
-            <div class="ol_shape1">
-                <div class="animation animated bounceInDown" data-animation="bounceInDown" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: -30, &quot;smoothness&quot;: 20}"
-                        src="assets/images/shape18.png" alt="شکل 18"
-                        style="transform:translate3d(0px, -7.069px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, -7.069px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape2">
-                <div class="animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape19.png"
-                        alt="شکل 19"
-                        style="transform:translate3d(0px, 7.089px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 7.089px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape3">
-                <div class="animation animated zoomIn" data-animation="zoomIn" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape20.png"
-                        alt="شکل 20"
-                        style="transform:translate3d(0px, 4.075px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 4.075px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape4">
-                <div class="animation" data-animation="bounceInUp" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape21.png"
-                        alt="شکل 21"
-                        style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape5">
-                <div class="animation animated slideInRight" data-animation="slideInRight" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape22.png"
-                        alt="شکل22"
-                        style="transform:translate3d(0px, 7.089px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 7.089px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape6">
-                <div class="animation animated slideInRight" data-animation="slideInRight" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape23.png"
-                        alt="شکل 23"
-                        style="transform:translate3d(0px, 5.976px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 5.976px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape7">
-                <div class="animation" data-animation="slideInRight" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape24.png"
-                        alt="شکل24"
-                        style="transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 0.019px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION WHY CHOOSE US -->
-
-
-    <!-- START SECTION DEAL OF THE DAY -->
-    <!-- <section class="bg_light_blue">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6 col-md-7">
-                    <div class="deal_content text-center">
-                        <div class="heading_s1 text-center animation" data-animation="fadeInUp"
-                            data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 0;">
-                            <h2>تخفیف ویژه <br>برای کلیه محصولات غذایی</h2>
-                        </div>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s"
-                            style="animation-delay: 0.03s; opacity: 0;">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        </p>
-                        <div class="countdown_time animation" data-animation="fadeInUp" data-animation-delay="0.04s"
-                            data-time="2023/06/02 12:30:15" style="animation-delay: 0.04s; opacity: 0;">
-                            <div class="countdown_box">
-                                <div class="countdown_content"><span class="countdown days">00 </span><span
-                                        class="cd_text">ثانیه</span></div>
-                            </div>
-                            <div class="countdown_box">
-                                <div class="countdown_content"><span class="countdown hours">00</span><span
-                                        class="cd_text">دقیقه</span></div>
-                            </div>
-                            <div class="countdown_box">
-                                <div class="countdown_content"><span class="countdown minutes">00</span><span
-                                        class="cd_text">ساعت</span></div>
-                            </div>
-                            <div class="countdown_box">
-                                <div class="countdown_content"><span class="countdown seconds">00</span><span
-                                        class="cd_text">روز</span></div>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-default btn-radius btn-borderd animation" data-animation="fadeInUp"
-                            data-animation-delay="0.04s" style="animation-delay: 0.04s; opacity: 0;">اکنون پیشنهاد را
-                            مشاهده کنید</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-5">
-                    <div class="deal_img_wrap bounceimg animation" data-animation="zoomIn" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 0;">
-                        <img src="assets/images/deal_img.png" alt="deal_img">
-                    </div>
-                    <div class="circle_bg1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="overlap_shape">
-            <div class="ol_shape15">
-                <div class="animation" data-animation="fadeInLeft" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: -30, &quot;smoothness&quot;: 20}"
-                        src="assets/images/shape32.png" alt="شکل 32">
-                </div>
-            </div>
-            <div class="ol_shape16">
-                <div class="animation" data-animation="fadeInRight" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: 30, &quot;smoothness&quot;: 20}" src="assets/images/shape33.png"
-                        alt="شکل 33">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION DEAL OF THE DAY -->
-
-    <!-- START SECTION FEATURE PRODUCT -->
-    <!-- <section class="bg_gray pt-5">
-
-        <div class="container pt-5">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-md-8 text-center">
-                    <div class="heading_s2 text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 0;">
-                        <h2>
-                            غرفه خانگی
-                        </h2>
-                    </div>
-                    <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.03s"
-                        style="animation-delay: 0.03s; opacity: 0;">
-                        شما می توانید محصولات خانگی را از این قسمت خریداری کنید
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-md-6">
-                    <div class="icon_box icon_box_style3 box_shadow4 bg-white animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <a href="#" class="box_icon d-block">
-                            <img src="assets/images/shape11.png" style="width: 60px;" alt="icon1">
-                        </a>
-                        <a href="#" class="intro_desc">
-                            <h6>
-                                سبزی سرخ کرده
-                            </h6>
-                            <p>لورم ایپسوم متن
-                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="icon_box icon_box_style3 box_shadow4 bg-white animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 0;">
-                        <a href="#" class="box_icon d-block">
-                            <img src="assets/images/shape34.png" style="width: 60px;" alt="icon2">
-                        </a>
-                        <a href="#" class="intro_desc">
-                            <h6>
-                                مربای توت فرنگی
-                            </h6>
-                            <p>لورم ایپسوم متن
-                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="icon_box icon_box_style3 box_shadow4 bg-white animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <a href="#" class="box_icon d-block">
-                            <img src="assets/images/shape7.png" style="width: 60px;" alt="icon3">
-                        </a>
-                        <a href="#" class="intro_desc">
-                            <h6>
-                                رب خانگی
-                            </h6>
-                            <p>لورم ایپسوم متن
-                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="icon_box icon_box_style3 box_shadow4 bg-white animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 0;">
-                        <a href="#" class="box_icon d-block">
-                            <img src="assets/images/shape18.png" style="width: 40px;" alt="icon4">
-                        </a>
-                        <a href="#" class="intro_desc">
-                            <h6>
-                                اب لیمو
-                            </h6>
-                            <p>لورم ایپسوم متن
-                                ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION FEATURE PRODUCT -->
-
-    <!-- START SECTION TESTIMONIAL -->
-    <!-- <section class="bg_gray">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 1;">
-                        <div class="heading_s1 text-center">
-                            <h2>مشتری ما می گویند!</h2>
-                        </div>
-                        <p class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.03s"
-                            style="animation-delay: 0.03s; opacity: 1;">
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                        </p>
-                    </div>
-                    <div class="small_divider"></div>
-                </div>
-            </div>
-            <div class="row justify-content-center ltr">
-                <div class="col-12 animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.04s"
-                    style="animation-delay: 0.04s; opacity: 1;">
-                    <div class="testimonial_slider testimonial_style1 carousel_slide3 owl-carousel owl-theme fl owl-loaded owl-drag"
-                        data-margin="30" data-loop="true" data-autoplay="true" data-dots="false">
-
-
-
-                        <div class="owl-stage-outer owl-height" style="height: 233px;">
-                            <div class="owl-stage"
-                                style="transform: translate3d(-1900px, 0px, 0px); transition: all 0.25s ease 0s; width: 3420px;">
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                                                از طراحان گرافیک است.
-                                            </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img1.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>مبارک والتر</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img2.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>جان مارک</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img3.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>کالوین ویلیام</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                                                از طراحان گرافیک است.
-                                            </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img1.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>مبارک والتر</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img2.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>جان مارک</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img3.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>کالوین ویلیام</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned active" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>
-                                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-                                                از طراحان گرافیک است.
-                                            </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img1.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>مبارک والتر</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned active" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img2.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>جان مارک</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 350px; margin-right: 30px;">
-                                    <div class="testimonial_box">
-                                        <div class="testi_desc">
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
-                                                طراحان گرافیک است. </p>
-                                        </div>
-                                        <div class="testi_meta">
-                                            <div class="testimonial_img">
-                                                <img src="assets/images/client_img3.jpg" alt="مشتری">
-                                            </div>
-                                            <div class="testi_user">
-                                                <h5>کالوین ویلیام</h5>
-                                                <span>طراح وب</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav disabled">
-                            <div class="owl-prev"><i class="ion-ios-arrow-forward"></i></div>
-                            <div class="owl-next"><i class="ion-ios-arrow-back"></i></div>
-                        </div>
-                        <div class="owl-dots disabled"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="overlap_shape">
-            <div class="ol_shape17">
-                <div class="animation animated fadeInLeft" data-animation="fadeInLeft" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 20, &quot;smoothness&quot;: 20}"
-                        src="assets/images/testimonial_bg_img1.jpg" alt="Testonial_bg_img1"
-                        style="transform:translate3d(0px, 12.563px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 12.563px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-            <div class="ol_shape18">
-                <div class="animation float-left animated fadeInRight" data-animation="fadeInRight"
-                    data-animation-delay="0.5s" style="animation-delay: 0.5s; opacity: 1;">
-                    <img data-parallax="{&quot;y&quot;: 20, &quot;smoothness&quot;: 20}"
-                        src="assets/images/testimonial_bg_img2.png" alt="Testonial_bg_img2"
-                        style="transform:translate3d(0px, 12.399px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0px, 12.399px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION TESTIMONIAL -->
-
-    <!-- START SECTION BLOG -->
-    <!-- <section class="pb_20">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-4 col-md-6 col-sm-8 text-center">
-                    <div class="heading_s1 text-center animation animated fadeInUp" data-animation="fadeInUp"
-                        data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 0;">
-                        <h2>
-                            فروش حدودی
-                        </h2>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/letest_post1.jpg" style="width: auto; height: 70px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/letest_post2.jpg" style="width: auto; height: 50px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 order-lg-last">
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/letest_post3.jpg" style="width: auto; height: 60px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/insta_img2.jpg" style="width: auto; height: 70px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 order-lg-last">
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/insta_img5.jpg" style="width: auto; height: 60px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                    <div class="icon_box icon_box_style1 bg-white radius_all_10 animation animated fadeInUp"
-                        data-animation="fadeInUp" data-animation-delay="0.05s"
-                        style="animation-delay: 0.05s; opacity: 0;">
-                        <a class="box_icon" href="#">
-                            <img src="assets/images/gallery_item_small1.jpg" style="width: auto; height: 70px;"
-                                class="rounded-circle" alt="icon1">
-                        </a>
-                        <a class="intro_desc" href="#">
-                            <h6>چای ارگانیک طبیعی</h6>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION BLOG -->
-
-    <!-- START SECTION CLIENT LOGO -->
-    <!-- <section class="small_pt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-8">
-                    <div class="text-center">
-                        <div class="heading_s1 text-center animation" data-animation="fadeInUp"
-                            data-animation-delay="0.02s" style="animation-delay: 0.02s; opacity: 0;">
-                            <h2>شریک زندگی ما</h2>
-                        </div>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.03s"
-                            style="animation-delay: 0.03s; opacity: 0;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                            صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-                        <div class="small_divider"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltr">
-                <div class="col-12 animation" data-animation="fadeInUp" data-animation-delay="0.02s"
-                    style="animation-delay: 0.02s; opacity: 0;">
-                    <div class="carousel_slide5 owl-carousel owl-theme owl-loaded owl-drag" data-margin="30"
-                        data-dots="false" data-loop="true" data-autoplay="true">
-
-
-
-
-
-                        <div class="owl-stage-outer owl-height" style="height: 146px;">
-                            <div class="owl-stage"
-                                style="transform: translate3d(-1368px, 0px, 0px); transition: all 0.25s ease 0s; width: 3420px;">
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo1.png" alt="cl_logo1"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo2.png" alt="cl_logo2"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo3.png" alt="cl_logo3"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo4.png" alt="cl_logo4"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo5.png" alt="cl_logo5"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo1.png" alt="cl_logo1"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo2.png" alt="cl_logo2"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo3.png" alt="cl_logo3"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo4.png" alt="cl_logo4"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item active" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo5.png" alt="cl_logo5"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned active" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo1.png" alt="cl_logo1"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo2.png" alt="cl_logo2"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo3.png" alt="cl_logo3"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo4.png" alt="cl_logo4"></a>
-                                    </div>
-                                </div>
-                                <div class="owl-item cloned" style="width: 198px; margin-right: 30px;">
-                                    <div class="items">
-                                        <a href="#"><img src="assets/images/cl_logo5.png" alt="cl_logo5"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-nav disabled">
-                            <div class="owl-prev"><i class="ion-ios-arrow-forward"></i></div>
-                            <div class="owl-next"><i class="ion-ios-arrow-back"></i></div>
-                        </div>
-                        <div class="owl-dots disabled"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION CLIENT LOGO -->
-
-    <!-- END SECTION NEWSLATTER -->
-    <!-- <section class="bg_light_green newslatter_wrap">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 text-center">
-                    <div class="heading_s1 animation" data-animation="fadeInUp" data-animation-delay="0.02s"
-                        style="animation-delay: 0.02s; opacity: 0;">
-                        <h2>در خبرنامه ما مشترک شوید</h2>
-                    </div>
-                    <p class="m-0 animation" data-animation="fadeInUp" data-animation-delay="0.03s"
-                        style="animation-delay: 0.03s; opacity: 0;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                        صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-                    <div class="small_divider"></div>
-                    <div class="newsletter_form animation" data-animation="fadeInUp" data-animation-delay="0.04s"
-                        style="animation-delay: 0.04s; opacity: 0;">
-                        <form>
-                            <div class="rounded_input">
-                                <input type="text" class="form-control" required="" placeholder="ایمیل">
-                            </div>
-                            <button type="submit" title="اشتراک در" class="btn btn-default" name="submit"
-                                value="Submit">عضویت</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="overlap_shape">
-            <div class="ol_shape19">
-                <div class="animation" data-animation="fadeInLeft" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: 20, &quot;smoothness&quot;: 20}" src="assets/images/shape34.png"
-                        alt="شکل34">
-                </div>
-            </div>
-            <div class="ol_shape20">
-                <div class="animation" data-animation="fadeInRight" data-animation-delay="0.5s"
-                    style="animation-delay: 0.5s; opacity: 0;">
-                    <img data-parallax="{&quot;y&quot;: 20, &quot;smoothness&quot;: 20}" src="assets/images/shape35.png"
-                        alt="شکل35">
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- END SECTION NEWSLATTER -->
-
     <!-- START FOOTER -->
     <footer class="bg_gray">
         <div class="top_footer small_pt small_pb">
@@ -2858,58 +1734,6 @@
     <script src="assets/js/jquery.elevatezoom.js"></script>
     <!-- scripts js -->
     <script src="assets/js/scripts.js"></script>
-
-    <!-- Code injected by live-server -->
-    <script>
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-        // ]]>
-    </script>
-
-
-    <div class="zoomContainer"
-        style="-webkit-transform: translateZ(0);position:absolute;left:0px;top:297px;height:-2px;width:-2px;">
-        <div class="zoomLens"
-            style="background-position: 0px 0px;width: 0px;height: 0px;float: right;display: none;overflow: hidden;z-index: 999;-webkit-transform: translateZ(0);opacity:0.4;filter: alpha(opacity = 40); zoom:1;width:0px;height:-2px;background-color:white;cursor:crosshair;border: 1px solid #000;background-repeat: no-repeat;position: absolute;">
-            &nbsp;</div>
-        <div class="zoomWindowContainer" style="width: 0px;">
-            <div style="overflow: hidden; background-position: 0px 0px; text-align: center; background-color: rgb(255, 255, 255); width: 0px; height: 0px; float: left; background-size: 1920px 1280px; display: none; z-index: 100; border: 0px solid rgb(136, 136, 136); background-repeat: no-repeat; position: absolute; background-image: url(&quot;assets/images/product1.jpg&quot;);"
-                class="zoomWindow">&nbsp;</div>
-        </div>
-    </div>
-    <div id="mttContainer" class="bootstrapiso notranslate" data-html="true" data-original-title="" title=""></div>
 </body>
 
 </html>

@@ -894,26 +894,49 @@ $(".sliderCompetitiveAdvantage").owlCarousel({
 });
 $(".sliderDiscount").owlCarousel({
   loop: true,
-  
   nav: false,
   autoplay: true,
   autoplayTimeout: 2000,
   responsive: {
     0: {
-		items: 1,
-		margin: 0,
+      items: 1,
+      margin: 0,
     },
     500: {
       items: 2,
-	  margin: 40,
+      margin: 40,
     },
-	700: {
-		items: 3,
-		margin: 50,
-	  },
+    700: {
+      items: 3,
+      margin: 50,
+    },
     1000: {
-		items: 5,
-		margin: 70,
+      items: 5,
+      margin: 70,
+    },
+  },
+});
+$(".sliderCategoryProduct").owlCarousel({
+  loop: true,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  responsive: {
+    0: {
+      items: 3,
+      margin: 0,
+    },
+    500: {
+      items: 2,
+      margin: 40,
+    },
+    700: {
+      items: 3,
+      margin: 50,
+    },
+    1000: {
+      items: 7,
+      margin: 70,
     },
   },
 });

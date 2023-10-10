@@ -7,7 +7,7 @@ Version      : 2.0.0
   src: url("../fonts/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 body {
-  background: #82c06d57 none repeat scroll 100% 0;
+  backdrop-filter: blur(6px);
   color: #636363;
   font-family: IRANSans;
   font-size: 16px;
@@ -2363,14 +2363,12 @@ body.active {
   background-position: -153px -35px;
 }
 .product {
-  background: linear-gradient(45deg, #ffffffdb, #bfbfbf61);
   border: 1px solid #dddddd;
-  border-radius: 50px 4px 50px 4px;
   position: relative;
   margin-bottom: 30px;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  box-shadow: -3px -3px 5px 2px #c5c5c5, 3px 3px 5px 2px #9f9f9f;
+  box-shadow: -3px -3px 5px 2px #8bc34a54, 3px 3px 5px 2px #8bc34aa3;
 }
 .product:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
@@ -5904,7 +5902,7 @@ div#demonote {
     316deg,
     rgb(255 215 0 / 41%),
     rgb(50 205 50 / 30%),
-    rgb(255 69 0 / 22%),
+    rgb(0 0 0 / 50%),
     rgb(147 112 219 / 32%),
     rgb(255 165 0 / 41%)
   );
@@ -5924,4 +5922,10 @@ div#demonote {
   max-width: 280px;
   background: #ffff;
   border-radius: 50px 50px 50px 50px;
+}
+.sliderCategoryProduct a {
+  transition: all 0.2s;
+  padding: 7px 7px;
+  display: block;
+  text-wrap: nowrap;
 }
