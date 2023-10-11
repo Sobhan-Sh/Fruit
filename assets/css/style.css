@@ -7,7 +7,7 @@ Version      : 2.0.0
   src: url("../fonts/IRANSansWeb(FaNum).ttf") format("truetype");
 }
 body {
-  backdrop-filter: blur(6px);
+  /* backdrop-filter: blur(6px); */
   color: #636363;
   font-family: IRANSans;
   font-size: 16px;
